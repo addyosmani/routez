@@ -1,0 +1,24 @@
+<script src="routes2.js"></script>
+<script>
+// dc.history.register(/^#search/, controller.runSearch);
+//
+// And then you can save arbitrary history fragments.
+//
+// dc.history.save('search/freedom/p3');
+
+function helloworld(){
+	alert('hello world');
+}
+
+
+window.hashHistory.initialize();
+window.hashHistory.register(/^#search/, function(){ alert('aaaah'); });
+//window.hashHistory.register(/^#about/, function(){ alert('about'); });
+window.hashHistory.save("search/freedom/p3");
+
+window.hashHistory.register(/^#about/, function(){ alert('about'); });
+</script>
+
+
+
+
